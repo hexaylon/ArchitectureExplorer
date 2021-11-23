@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"C:\\UnrealProjectFast\\ArchitectureExplorer\\Source\\ArchitectureExplorer\\ArchitectureExplorer.Build.cs",
+		"C:\\UnrealProjectFast\\ArchitectureExplorer\\Source\\ArchitectureExplorer.Target.cs",
+		"C:\\UnrealProjectFast\\ArchitectureExplorer\\Source\\ArchitectureExplorerEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.0"
+}
