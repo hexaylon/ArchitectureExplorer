@@ -58,7 +58,31 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(AVRCharacter)
 
 
-#define ArchitectureExplorer_Source_ArchitectureExplorer_VRCharacter_h_12_PRIVATE_PROPERTY_OFFSET
+#define ArchitectureExplorer_Source_ArchitectureExplorer_VRCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
+	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(AVRCharacter, Camera); } \
+	FORCEINLINE static uint32 __PPO__LeftController() { return STRUCT_OFFSET(AVRCharacter, LeftController); } \
+	FORCEINLINE static uint32 __PPO__RightController() { return STRUCT_OFFSET(AVRCharacter, RightController); } \
+	FORCEINLINE static uint32 __PPO__VRRoot() { return STRUCT_OFFSET(AVRCharacter, VRRoot); } \
+	FORCEINLINE static uint32 __PPO__TeleportPath() { return STRUCT_OFFSET(AVRCharacter, TeleportPath); } \
+	FORCEINLINE static uint32 __PPO__DestinationMarker() { return STRUCT_OFFSET(AVRCharacter, DestinationMarker); } \
+	FORCEINLINE static uint32 __PPO__PostProcessComponent() { return STRUCT_OFFSET(AVRCharacter, PostProcessComponent); } \
+	FORCEINLINE static uint32 __PPO__MaxRange() { return STRUCT_OFFSET(AVRCharacter, MaxRange); } \
+	FORCEINLINE static uint32 __PPO__TeleportProjectileRadius() { return STRUCT_OFFSET(AVRCharacter, TeleportProjectileRadius); } \
+	FORCEINLINE static uint32 __PPO__TeleportProjectileSpeed() { return STRUCT_OFFSET(AVRCharacter, TeleportProjectileSpeed); } \
+	FORCEINLINE static uint32 __PPO__TeleportMaxSimTime() { return STRUCT_OFFSET(AVRCharacter, TeleportMaxSimTime); } \
+	FORCEINLINE static uint32 __PPO__FadeTime() { return STRUCT_OFFSET(AVRCharacter, FadeTime); } \
+	FORCEINLINE static uint32 __PPO__Speed() { return STRUCT_OFFSET(AVRCharacter, Speed); } \
+	FORCEINLINE static uint32 __PPO__TeleportProjectionExtent() { return STRUCT_OFFSET(AVRCharacter, TeleportProjectionExtent); } \
+	FORCEINLINE static uint32 __PPO__BlinkerMaterialBase() { return STRUCT_OFFSET(AVRCharacter, BlinkerMaterialBase); } \
+	FORCEINLINE static uint32 __PPO__BlinkerMaterialInstance() { return STRUCT_OFFSET(AVRCharacter, BlinkerMaterialInstance); } \
+	FORCEINLINE static uint32 __PPO__TeleportPathMeshPool() { return STRUCT_OFFSET(AVRCharacter, TeleportPathMeshPool); } \
+	FORCEINLINE static uint32 __PPO__TeleportArchMesh() { return STRUCT_OFFSET(AVRCharacter, TeleportArchMesh); } \
+	FORCEINLINE static uint32 __PPO__TeleportArchMaterial() { return STRUCT_OFFSET(AVRCharacter, TeleportArchMaterial); } \
+	FORCEINLINE static uint32 __PPO__RadiusVsVelocity() { return STRUCT_OFFSET(AVRCharacter, RadiusVsVelocity); } \
+	FORCEINLINE static uint32 __PPO__BlinkRadius() { return STRUCT_OFFSET(AVRCharacter, BlinkRadius); } \
+	FORCEINLINE static uint32 __PPO__HandControllerClass() { return STRUCT_OFFSET(AVRCharacter, HandControllerClass); }
+
+
 #define ArchitectureExplorer_Source_ArchitectureExplorer_VRCharacter_h_9_PROLOG
 #define ArchitectureExplorer_Source_ArchitectureExplorer_VRCharacter_h_12_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \

@@ -26,7 +26,7 @@ void AHandController::BeginPlay()
 void AHandController::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
+	//test
 }
 
 void AHandController::SetHand(EControllerHand Hand)

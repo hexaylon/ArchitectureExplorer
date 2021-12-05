@@ -1,0 +1,12 @@
+C:\UnrealProjectFast\ArchitectureExplorer\Intermediate\Build\Win64\UE4Editor\Development\ArchitectureExplorer\Definitions.ArchitectureExplorer.h
+C:\UnrealProjectFast\ArchitectureExplorer\Source\ArchitectureExplorer\HandController.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\MotionControllerComponent.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\SceneViewExtension.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\Engine\Public\SceneViewExtensionContext.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SceneViewExtensionContext.generated.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IMotionController.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\LateUpdateManager.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Source\Runtime\HeadMountedDisplay\Public\IIdentifiableXRDevice.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\IIdentifiableXRDevice.generated.h
+D:\Program Files\Epic Games\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\HeadMountedDisplay\MotionControllerComponent.generated.h
+C:\UnrealProjectFast\ArchitectureExplorer\Intermediate\Build\Win64\UE4Editor\Inc\ArchitectureExplorer\HandController.generated.h
