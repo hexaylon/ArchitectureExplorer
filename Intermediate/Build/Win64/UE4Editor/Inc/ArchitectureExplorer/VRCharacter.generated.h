@@ -60,8 +60,8 @@ public: \
 
 #define ArchitectureExplorer_Source_ArchitectureExplorer_VRCharacter_h_12_PRIVATE_PROPERTY_OFFSET \
 	FORCEINLINE static uint32 __PPO__Camera() { return STRUCT_OFFSET(AVRCharacter, Camera); } \
-	FORCEINLINE static uint32 __PPO__LeftController() { return STRUCT_OFFSET(AVRCharacter, LeftController); } \
-	FORCEINLINE static uint32 __PPO__RightController() { return STRUCT_OFFSET(AVRCharacter, RightController); } \
+	FORCEINLINE static uint32 __PPO__TheLeftController() { return STRUCT_OFFSET(AVRCharacter, TheLeftController); } \
+	FORCEINLINE static uint32 __PPO__TheRightController() { return STRUCT_OFFSET(AVRCharacter, TheRightController); } \
 	FORCEINLINE static uint32 __PPO__VRRoot() { return STRUCT_OFFSET(AVRCharacter, VRRoot); } \
 	FORCEINLINE static uint32 __PPO__TeleportPath() { return STRUCT_OFFSET(AVRCharacter, TeleportPath); } \
 	FORCEINLINE static uint32 __PPO__DestinationMarker() { return STRUCT_OFFSET(AVRCharacter, DestinationMarker); } \

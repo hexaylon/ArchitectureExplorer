@@ -52,10 +52,10 @@ private:
 	class UCameraComponent* Camera;
 
 	UPROPERTY(VisibleAnywhere)
-	class AHandController* LeftController;
+	class AHandController* TheLeftController;
 
 	UPROPERTY(VisibleAnywhere)
-	class AHandController* RightController;
+	class AHandController* TheRightController;
 
 	UPROPERTY()
 	class USceneComponent* VRRoot;

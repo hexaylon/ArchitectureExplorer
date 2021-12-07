@@ -55,22 +55,22 @@ void AVRCharacter::BeginPlay()
 		
 	}
 
-	LeftController = GetWorld()->SpawnActor<AHandController>(HandControllerClass);
-	if (LeftController != nullptr)
+	TheLeftController = GetWorld()->SpawnActor<AHandController>(HandControllerClass);
+	if (TheLeftController != nullptr)
 	{
 
-		LeftController->AttachToComponent(VRRoot, FAttachmentTransformRules::KeepRelativeTransform);
-		LeftController->SetOwner(this);
-		LeftController->SetHand(EControllerHand::Left);
+		TheLeftController->AttachToComponent(VRRoot, FAttachmentTransformRules::KeepRelativeTransform);
+		TheLeftController->SetOwner(this);
+		TheLeftController->SetHand(EControllerHand::Left);
 	}
 
-	RightController = GetWorld()->SpawnActor<AHandController>(HandControllerClass);
-	if (RightController != nullptr)
+	TheRightController = GetWorld()->SpawnActor<AHandController>(HandControllerClass);
+	if (TheRightController != nullptr)
 	{
 
-		RightController->AttachToComponent(VRRoot, FAttachmentTransformRules::KeepRelativeTransform);
-		RightController->SetOwner(this);
-		RightController->SetHand(EControllerHand::Right);
+		TheRightController->AttachToComponent(VRRoot, FAttachmentTransformRules::KeepRelativeTransform);
+		TheRightController->SetOwner(this);
+		TheRightController->SetHand(EControllerHand::Right);
 	}
 
 }
@@ -95,14 +95,14 @@ void AVRCharacter::Tick(float DeltaTime)
 bool AVRCharacter::FindTeleportDestination(TArray<FVector>& OutPath, FVector& OutLocation)
 {
 
-	if (LeftController == nullptr)
+	if (TheLeftController == nullptr)
 	{
 		return true;
 	}
 
-	FVector Start = LeftController->GetActorLocation();
-	FVector Look = LeftController->GetActorForwardVector();
-	Look = Look.RotateAngleAxis(30, LeftController->GetActorRightVector());
+	FVector Start = TheLeftController->GetActorLocation();
+	FVector Look = TheLeftController->GetActorForwardVector();
+	Look = Look.RotateAngleAxis(30, TheLeftController->GetActorRightVector());
 
 	FVector End = Start + Look * MaxRange;
 
