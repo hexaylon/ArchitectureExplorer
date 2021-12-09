@@ -19,6 +19,11 @@ public:
 	AHandController();
 
 	void SetHand(EControllerHand Hand);
+	void PairController(AHandController* Controller);
+
+
+	void Grip();
+	void Release();
 
 protected:
 	// Called when the game starts or when spawned
@@ -29,8 +34,29 @@ public:
 	virtual void Tick(float DeltaTime) override;
 
 private:
+	// Callbacks
+	UFUNCTION()
+	void ActorBeginOverlap(AActor* OverlappedActor, AActor* OtherActor);
+	UFUNCTION()
+	void ActorEndOverlap(AActor* OverlappedActor, AActor* OtherActor);
+
+	//Helpers
+
+	bool CanClimb() const;
+
+
 	// Default Sub Object
 	UPROPERTY(VisibleAnywhere)
 	UMotionControllerComponent* MotionController;
 
+	//Parameters
+	UPROPERTY(EditDefaultsOnly)
+	class UHapticFeedbackEffect_Base* HapticEffect;
+
+	//state
+	bool bCanClimb = false;
+	bool bIsClimbing = false;
+	FVector ClimbingStartLocation;
+
+	AHandController* OtherController;
 };

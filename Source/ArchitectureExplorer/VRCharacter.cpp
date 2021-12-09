@@ -62,6 +62,8 @@ void AVRCharacter::BeginPlay()
 		TheLeftController->AttachToComponent(VRRoot, FAttachmentTransformRules::KeepRelativeTransform);
 		TheLeftController->SetOwner(this);
 		TheLeftController->SetHand(EControllerHand::Left);
+
+		
 	}
 
 	TheRightController = GetWorld()->SpawnActor<AHandController>(HandControllerClass);
@@ -72,6 +74,10 @@ void AVRCharacter::BeginPlay()
 		TheRightController->SetOwner(this);
 		TheRightController->SetHand(EControllerHand::Right);
 	}
+	
+	//setup pair controller so grip can be switched
+	TheLeftController->PairController(TheRightController);
+	//TheRightController->PairController(TheLeftController);
 
 }
 
@@ -298,6 +304,11 @@ void AVRCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAxis(TEXT("Forward"), this, &AVRCharacter::MoveForward);
 	PlayerInputComponent->BindAxis(TEXT("Right"), this, &AVRCharacter::MoveRight);
 	PlayerInputComponent->BindAction(TEXT("Teleport"),EInputEvent::IE_Pressed,this, &AVRCharacter::BeginTeleport); 
+	PlayerInputComponent->BindAction(TEXT("GripLeft"), EInputEvent::IE_Pressed, this, &AVRCharacter::GripLeft);
+	PlayerInputComponent->BindAction(TEXT("GripLeft"), EInputEvent::IE_Released, this, &AVRCharacter::ReleaseLeft);
+	PlayerInputComponent->BindAction(TEXT("GripRight"), EInputEvent::IE_Pressed, this, &AVRCharacter::GripRight);
+	PlayerInputComponent->BindAction(TEXT("GripRight"), EInputEvent::IE_Released, this, &AVRCharacter::ReleaseRight);
+
 }
 
 void AVRCharacter::MoveForward(float throttle)

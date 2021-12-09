@@ -8,14 +8,25 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
 #ifdef ARCHITECTUREEXPLORER_HandController_generated_h
 #error "HandController.generated.h already included, missing '#pragma once' in HandController.h"
 #endif
 #define ARCHITECTUREEXPLORER_HandController_generated_h
 
 #define ArchitectureExplorer_Source_ArchitectureExplorer_HandController_h_15_SPARSE_DATA
-#define ArchitectureExplorer_Source_ArchitectureExplorer_HandController_h_15_RPC_WRAPPERS
-#define ArchitectureExplorer_Source_ArchitectureExplorer_HandController_h_15_RPC_WRAPPERS_NO_PURE_DECLS
+#define ArchitectureExplorer_Source_ArchitectureExplorer_HandController_h_15_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execActorEndOverlap); \
+	DECLARE_FUNCTION(execActorBeginOverlap);
+
+
+#define ArchitectureExplorer_Source_ArchitectureExplorer_HandController_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execActorEndOverlap); \
+	DECLARE_FUNCTION(execActorBeginOverlap);
+
+
 #define ArchitectureExplorer_Source_ArchitectureExplorer_HandController_h_15_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAHandController(); \
@@ -59,7 +70,8 @@ public: \
 
 
 #define ArchitectureExplorer_Source_ArchitectureExplorer_HandController_h_15_PRIVATE_PROPERTY_OFFSET \
-	FORCEINLINE static uint32 __PPO__MotionController() { return STRUCT_OFFSET(AHandController, MotionController); }
+	FORCEINLINE static uint32 __PPO__MotionController() { return STRUCT_OFFSET(AHandController, MotionController); } \
+	FORCEINLINE static uint32 __PPO__HapticEffect() { return STRUCT_OFFSET(AHandController, HapticEffect); }
 
 
 #define ArchitectureExplorer_Source_ArchitectureExplorer_HandController_h_12_PROLOG
